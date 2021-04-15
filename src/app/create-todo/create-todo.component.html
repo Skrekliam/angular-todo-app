@@ -1,0 +1,33 @@
+<form [formGroup]="todoCreateForm">
+  <div class="card">
+    <div class="header">
+      <p>
+        <input
+          formControlName="title"
+          type="text"
+          class="titleInput"
+          placeholder="Enter Title"
+          minlength="4"
+          required
+        />
+      </p>
+    </div>
+
+    <p>
+      <textarea
+        formControlName="text"
+        type="text"
+        class="textInput"
+        placeholder="Enter Text"
+        minlength="4"
+        required
+        cols="40"
+        rows="3"
+      ></textarea>
+
+    </p>
+  
+  <hr />
+  <button (disabled)="todoCreateForm.controls['text'].valid"  (click)="submit()">Create ToDo</button>
+</div>
+</form>

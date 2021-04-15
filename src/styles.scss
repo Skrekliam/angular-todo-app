@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  transition: 0.5s ease;
+  &::-webkit-scrollbar{
+      background: #5D2A42;
+      width: 15px;
+      
+  }
+  &::-webkit-scrollbar-button{
+    background: #FB6376;
+    height: 3px;
+  }
+  &::-webkit-resizer{
+    background: rgba($color: #FFDCCC, $alpha: 0.3);
+    
+  }
+}
+html {
+  font-family: Roboto, sans-serif;
+  background-color: #FFDCCC;
+}
+.blocks {
+    
+  .first {
+    min-width: 450px;
+    max-width: 500px;
+    height: auto;
+    display: inline-block;
+  }
+  .second {
+    width: 34%;
+    height: auto;
+    
+    min-width: 450px;
+    max-width: 500px;
+    display: inline-block;
+  }
+  .third {
+    width: 25%;
+    height: auto;
+    display: inline-block;
+  }
+}
