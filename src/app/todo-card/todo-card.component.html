@@ -14,8 +14,8 @@
       <span>#{{ index }}</span> 
       {{ todo.title }}
     </p>
-    <button class="done" (click)="todo.done = !todo.done">V</button>
-    <button class="delete" (click)="todo.removed = true">X</button>
+    <button class="done" (click)="todo.done = !todo.done">✔</button>
+    <button class="delete" (click)="todo.removed = true">❌</button>
   </div>
 
   <div class="body" *ngIf="!todo.done">
